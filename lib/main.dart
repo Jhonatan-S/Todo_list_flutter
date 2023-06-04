@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:to_do_list/pages/to_do_list_page.dart';
+import 'package:todo/pages/home_page.dart';
 
 
 void main() {
-  return runApp(const MyApp());
+  return runApp(Todo());
 }
 
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+
+class Todo extends StatelessWidget {
+  const Todo({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      
-      
-      home: ToDoListPage(),
+
+      home: HomePage(),
     );
   }
 }
