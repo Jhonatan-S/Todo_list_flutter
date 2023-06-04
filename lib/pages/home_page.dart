@@ -149,6 +149,7 @@ class _HomePageState extends State<HomePage> {
     setState(
       () {
         todos.remove(todo);
+        todosLength = todos.length;
       },
     );
   }
